@@ -12,7 +12,6 @@ public class ReadCSVFile {
 		}
 		sc.close();
 	}
-
 }
 //output:
 /*

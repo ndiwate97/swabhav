@@ -20,3 +20,10 @@ public class SkipNullOrZero {
 	}  
 
 }
+/*
+ *output: 
+23 female
+102 xyz 21 male
+103 pqr 29 male
+104 30 female 
+*/
