@@ -36,7 +36,7 @@ public class WriteTextFile {
 
 	private static Integer checkIntData(int i) {
 		if(i==0)
-			return ;
+			return null ;
 		else 
 			return i;
 	}

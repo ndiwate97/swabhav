@@ -11,6 +11,7 @@ public class ReadCSVFile {
 			System.out.print(sc.next() + " ");
 		}
 		sc.close();
+		
 	}
 }
 //output:
