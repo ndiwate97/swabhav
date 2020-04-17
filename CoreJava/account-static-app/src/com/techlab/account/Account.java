@@ -1,6 +1,8 @@
 package com.techlab.account;
 
-public class Account {
+import java.io.Serializable;
+
+public class Account implements Serializable {
 	private String accountName;
 	private double balance;
 	private static int MINIMUM_BALANCE;
