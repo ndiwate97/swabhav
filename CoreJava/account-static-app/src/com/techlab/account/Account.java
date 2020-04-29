@@ -2,6 +2,11 @@ package com.techlab.account;
 
 import java.io.Serializable;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+
 public class Account implements Serializable {
 	private String accountName;
 	private double balance;
@@ -9,17 +14,27 @@ public class Account implements Serializable {
 	private static int totalNumOfTransaction;
 	private int individualNumOfTransaction=0;
 	private boolean transactionStatus=true;
+	private String accountNo;
 	
 	static {
 		MINIMUM_BALANCE = 500;
 		totalNumOfTransaction = 0;
 	}
 
-    public Account(String accountName, double balance) {
+    public Account( String accountNo, String accountName, double balance) {
+
+		this.accountName = accountName;
+		this.balance = balance;
+		this.accountNo = accountNo;
+	}
+
+
+	public Account(String accountName, double balance) {
     	this.accountName=accountName;
 		this.balance=balance;
 	}
 
+	
 	public void deposit(int amount) {//add
     	balance = balance + amount;
     	addCount();
@@ -68,5 +83,12 @@ public class Account implements Serializable {
 	public double getBalance() {
 		return balance;
 	}
+
+
+	public String getAccountNo() {
+		return accountNo;
+	}
 	
 }
+	
+

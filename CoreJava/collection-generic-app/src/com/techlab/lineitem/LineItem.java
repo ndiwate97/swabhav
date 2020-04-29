@@ -5,6 +5,7 @@ public class LineItem {
 	private String name;
 	private double unitPrice;
 	private int quantity;
+	private static double grandTotal= 0;
 
 	public LineItem(int id, String name, double unitPrice, int quantity) {
 		this.id = id;
@@ -30,7 +31,13 @@ public class LineItem {
 	}
 
 	public double calculateTotal() {
-		return unitPrice*quantity;
+		double total = unitPrice*quantity;
+		grandTotal = getGrandTotal() + total; 
+		return total;
+	}
+
+	public static double getGrandTotal() {
+		return grandTotal;
 	}
 	
 }
