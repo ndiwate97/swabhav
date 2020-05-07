@@ -7,8 +7,9 @@ import com.techlab.lineitem.LineItem;
 public class CartTest {
 
 	public static void main(String[] args) {
+		
 		ArrayList<LineItem> cart = new ArrayList<LineItem>();
-
+		
 		cart.add(new LineItem(101, "Apple", 30, 10));
 		cart.add(new LineItem(105, "Banana", 15, 5));
 		cart.add(new LineItem(199, "ToothPaste", 85, 2));
@@ -18,7 +19,7 @@ public class CartTest {
 
 	}
 
-	private static void printCartItems(ArrayList<LineItem> cart) {
+	private static  void printCartItems(ArrayList<LineItem> cart) {
 		for (LineItem li : cart) {
 			System.out.println("\nName of Item : " + li.getName());
 			System.out.println("Price : " + li.getUnitPrice());
