@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Rectangle-Encapsulation-app/1.0.0": {
+        "runtime": {
+          "Rectangle-Encapsulation-app.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rectangle-Encapsulation-app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

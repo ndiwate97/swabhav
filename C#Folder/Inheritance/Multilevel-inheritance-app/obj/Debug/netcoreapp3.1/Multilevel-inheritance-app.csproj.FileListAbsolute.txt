@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.AssemblyInfo.cs
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.exe
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.deps.json
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.runtimeconfig.json
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.runtimeconfig.dev.json
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.dll
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\bin\Debug\netcoreapp3.1\Multilevel-inheritance-app.pdb
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.dll
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.pdb
+C:\swabhav\C#Folder\Inheritance\Multilevel-inheritance-app\obj\Debug\netcoreapp3.1\Multilevel-inheritance-app.genruntimeconfig.cache

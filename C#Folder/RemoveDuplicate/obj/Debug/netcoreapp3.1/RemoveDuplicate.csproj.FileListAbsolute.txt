@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.AssemblyInfo.cs
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.exe
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.deps.json
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.runtimeconfig.json
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.runtimeconfig.dev.json
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.dll
+C:\swabhav\C#Folder\RemoveDuplicate\bin\Debug\netcoreapp3.1\RemoveDuplicate.pdb
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.dll
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.pdb
+C:\swabhav\C#Folder\RemoveDuplicate\obj\Debug\netcoreapp3.1\RemoveDuplicate.genruntimeconfig.cache

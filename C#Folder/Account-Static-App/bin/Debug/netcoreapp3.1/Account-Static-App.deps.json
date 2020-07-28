@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Account-Static-App/1.0.0": {
+        "runtime": {
+          "Account-Static-App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Account-Static-App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

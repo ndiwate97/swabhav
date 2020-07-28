@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.exe
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.deps.json
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.runtimeconfig.json
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.runtimeconfig.dev.json
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.dll
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\bin\Debug\netcoreapp3.1\Single-inheritance.pdb
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.AssemblyInfo.cs
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.dll
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.pdb
+C:\swabhav\C#Folder\Inheritance\Single-inheritance\obj\Debug\netcoreapp3.1\Single-inheritance.genruntimeconfig.cache

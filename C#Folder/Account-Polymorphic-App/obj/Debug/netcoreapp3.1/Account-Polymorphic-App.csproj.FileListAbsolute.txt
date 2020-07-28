@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.exe
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.deps.json
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.runtimeconfig.json
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.runtimeconfig.dev.json
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.dll
+C:\swabhav\C#Folder\Account-Polymorphic-App\bin\Debug\netcoreapp3.1\Account-Polymorphic-App.pdb
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.AssemblyInfo.cs
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.dll
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.pdb
+C:\swabhav\C#Folder\Account-Polymorphic-App\obj\Debug\netcoreapp3.1\Account-Polymorphic-App.genruntimeconfig.cache

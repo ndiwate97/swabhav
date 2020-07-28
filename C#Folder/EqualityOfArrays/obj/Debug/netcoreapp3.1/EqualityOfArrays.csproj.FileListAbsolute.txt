@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.AssemblyInfo.cs
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.exe
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.deps.json
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.runtimeconfig.json
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.runtimeconfig.dev.json
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.dll
+C:\swabhav\C#Folder\EqualityOfArrays\bin\Debug\netcoreapp3.1\EqualityOfArrays.pdb
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.dll
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.pdb
+C:\swabhav\C#Folder\EqualityOfArrays\obj\Debug\netcoreapp3.1\EqualityOfArrays.genruntimeconfig.cache

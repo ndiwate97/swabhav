@@ -1,0 +1,13 @@
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.csprojAssemblyReference.cache
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.AssemblyInfoInputs.cache
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.AssemblyInfo.cs
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.csproj.CoreCompileInputs.cache
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.exe
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.deps.json
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.runtimeconfig.json
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.runtimeconfig.dev.json
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.dll
+C:\swabhav\C#Folder\PairOfElement\bin\Debug\netcoreapp3.1\PairOfElement.pdb
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.dll
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.pdb
+C:\swabhav\C#Folder\PairOfElement\obj\Debug\netcoreapp3.1\PairOfElement.genruntimeconfig.cache
