@@ -5,7 +5,7 @@ import com.techlab.account.InsufficientBalance;
 
 public class AccountTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InsufficientBalance {
 
 		Account a1 = new Account("Account1", 1500);
 		a1.withdraw(1400);

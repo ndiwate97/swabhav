@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "2 3  4  -prime"
+    }
+  }
+}
