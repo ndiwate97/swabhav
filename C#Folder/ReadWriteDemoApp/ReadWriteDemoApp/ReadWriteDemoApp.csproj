@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A3ED06C-1FBF-4521-98A3-CB30516DBDB1}</ProjectGuid>
+    <ProjectGuid>{4851AED0-2247-47AC-9047-2098A88449C3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WelcomeApp</RootNamespace>
-    <AssemblyName>WelcomeApp</AssemblyName>
+    <RootNamespace>ReadWriteDemoApp</RootNamespace>
+    <AssemblyName>ReadWriteDemoApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,9 +43,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

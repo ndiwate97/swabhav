@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A3ED06C-1FBF-4521-98A3-CB30516DBDB1}</ProjectGuid>
+    <ProjectGuid>{750B8BB3-5980-417B-824D-22ACC56576E2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WelcomeApp</RootNamespace>
-    <AssemblyName>WelcomeApp</AssemblyName>
+    <RootNamespace>PassbyValueApp</RootNamespace>
+    <AssemblyName>PassbyValueApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,11 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
