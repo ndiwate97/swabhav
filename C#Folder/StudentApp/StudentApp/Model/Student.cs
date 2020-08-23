@@ -2,6 +2,7 @@
 
 namespace StudentApp.Model
 {
+    [Serializable]
     public class Student
     {
         private string _firstName = "null";
