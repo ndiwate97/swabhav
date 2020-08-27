@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2BF06D7E-A7EF-48F1-B302-255016A667A7}</ProjectGuid>
+    <ProjectGuid>{A59ACAD5-5A34-4D0E-9204-5398B17210A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CollegeApp</RootNamespace>
-    <AssemblyName>CollegeApp</AssemblyName>
+    <RootNamespace>AccountPolymorphismApp</RootNamespace>
+    <AssemblyName>AccountPolymorphismApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,15 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Branch.cs" />
-    <Compile Include="Model\Person.cs" />
-    <Compile Include="Model\Professor.cs" />
-    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\CurrentAccount.cs" />
+    <Compile Include="Model\SavingsAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

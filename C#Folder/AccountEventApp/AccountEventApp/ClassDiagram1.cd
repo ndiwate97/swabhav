@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AccountEventApp.Publisher.Account">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAAAAAAAgAAAgEAQAAAAAAACQAAAAAAAI=</HashCode>
+      <FileName>Publisher\Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AccountEventApp.Subsciber.Program">
+    <Position X="2.25" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAoABAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Subsciber\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="AccountEventApp.Publisher.DBalanceChanged">
+    <Position X="2.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Publisher\Account.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
