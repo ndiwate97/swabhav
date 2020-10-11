@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var count = 10;
+
+        function saySomething() {
+            document.writeln("hello!");
+        }
+        for (var i = 0; i < count; i++) {
+            saySomething();
+        }
+    </script>
+    <br>
+    <br> Breaking the loop......<br>
+    <br>
+    <script>
+        //Break keyword
+
+        for (var i = 0; i < 100; i++) {
+            document.writeln(i);
+            if (i == 45) {
+                break;
+            }
+        }
+    </script>
+    <br>
+    <br>Skipping an Iteration............ <br>
+    <br>
+    <script>
+        var floors = 10;
+        for (var i = 1; i <= floors; i++) {
+            if (i == 5) {
+                // no floor here
+                continue;
+            }
+            document.writeln("At floor: " + i + "<br>");
+        }
+    </script>
+    <br>
+    <br>Backward Iteration............ <br>
+    <br>
+    <script>
+        for (var i = 25; i > 0; i--) {
+            document.writeln(i + " ");
+        }
+    </script>
+
+    <br>
+    <br>String for codition ............ <br>
+    <br>
+    <script>
+        for (var i = "a"; i != "aaaaaaaa"; i += "a") {
+            document.writeln("hmm...");
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContactStoreConsoleApp.DBContext.ContactDbContext">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBContext\ContactDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactStoreConsoleApp.Model.Contact">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Model\Contact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactStoreConsoleApp.Repository.ContactEFRepository">
+    <Position X="3" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAEAAAAAgAgAAwCAAAAEAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\ContactEFRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ContactStoreConsoleApp.Service.ContactService">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADFAgIAAAQAAAAAEAAAAAAAAAAAAAIAABAAAA=</HashCode>
+      <FileName>Service\ContactService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactStoreConsoleApp.Program">
+    <Position X="8.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADBAAAAYAAAAAACAAAAAAAEAAACCAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ContactStoreConsoleApp.Repository.IContactRepository">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADBAAIAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Repository\IContactRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

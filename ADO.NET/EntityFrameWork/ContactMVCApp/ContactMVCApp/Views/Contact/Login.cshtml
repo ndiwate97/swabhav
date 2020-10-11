@@ -1,0 +1,31 @@
+﻿@using ContactMVCApp.ViewModels;
+@model LoginViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("Login", "Contact", FormMethod.Post))
+        {
+            <p>
+                User Id : @Html.TextBoxFor(m => m.UserId )
+            </p>
+
+            <p>
+                Password : @Html.TextBoxFor(m => m.Password, new { type = "password" })
+            </p>
+
+            <p style="color:#FF0000" ;>@LoginViewModel.ErrorMsg</p>
+
+            <input type="Submit" />
+        }
+    </div>
+</body>
+</html>

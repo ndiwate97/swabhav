@@ -1,0 +1,37 @@
+﻿@using ContactMVCApp.ViewModels;
+@model EditViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("Edit", "Contact", FormMethod.Post))
+        {
+            <p>
+                Contact Id : @Html.TextBoxFor(m => m.Id, new { @readonly = "readonly" })
+            </p>
+
+            <p>
+                First Name : @Html.TextBoxFor(m => m.FirstName, new { @Value = Model.FirstName })
+            </p>
+
+            <p>
+                Last Name : @Html.TextBoxFor(m => m.LastName, new { @Value = Model.LastName })
+            </p>
+
+            <p>
+                Phone No : @Html.TextBoxFor(m => m.PhoneNo, new { @Value = Model.PhoneNo })
+            </p>
+
+            <input type="Submit" />
+        }
+    </div>
+</body>
+</html>

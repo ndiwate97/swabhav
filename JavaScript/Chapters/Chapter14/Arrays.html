@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //Creating an Array
+        //var groceries = []; or
+        var groceries = ["Milk", "Eggs", "Frosted Flakes", "Salami", "Juice"];
+
+        //Accessing array values
+        document.writeln("Array values are:<br>");
+        for (var i = 0; i < groceries.length; i++) {
+            var item = groceries[i];
+            document.writeln(item);
+        }
+
+        //Adding Items to Your Array
+        groceries.push("Cookies"); //adding item at the end
+        groceries.unshift("Bananas"); //adding item at the beginning
+        document.writeln("<br><br>Array values after push(\"Cookies\") and unshift(\"Bananas\") : <br>" + groceries);
+
+        //Removing Items from the Array
+        var lastItem = groceries.pop();
+        var firstItem = groceries.shift();
+        document.writeln("<br><br>Removed last and first item : " + lastItem + " " + firstItem);
+
+        //Sub array
+        var newArray = groceries.slice(1, 4);
+        document.writeln("<br><br>sub array from groceries : " + newArray);
+
+        //Finding Items in the Array
+        var resultIndex = groceries.indexOf("Eggs", 0);
+        document.writeln("<br><br>Got eggs at position : " + resultIndex);
+
+        //Merging Arrays
+        var good = ["Mario", "Luigi", "Kirby", "Yoshi"];
+        var bad = ["Bowser", "Koopa Troopa", "Goomba"];
+        var goodAndBad = good.concat(bad);
+        document.writeln("<br><br>Concating 2 arrays : " + goodAndBad);
+    </script>
+</body>
+
+</html>

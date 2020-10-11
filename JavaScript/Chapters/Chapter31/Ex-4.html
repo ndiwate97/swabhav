@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.addEventListener("keydown", keysPressed, false);
+		window.addEventListener("keyup", keysReleased, false);
+
+		var keys = [];
+		function keysPressed(e){
+			keys[e.keyCode] = true;
+			if(keys[17] && keys[16] && keys[53]){
+				console.log("CTRL+SHIFT+5");
+			}
+			if(keys[17] && keys[70]){
+				console.log("CTRL+F");
+				e.preventDefault();
+			}
+		}
+		function keysReleased(e){
+			keys[e.keyCode] = false;
+		}
+	</script>
+
+</body>
+</html>

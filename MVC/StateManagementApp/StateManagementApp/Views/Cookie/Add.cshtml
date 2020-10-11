@@ -1,0 +1,23 @@
+﻿@using StateManagementApp.ViewModels
+@model CookieViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+
+    <div>
+
+        @Model.SuccessMessage
+
+        <br />
+        <br />
+
+        @Html.ActionLink("Show Cookie", "Display")
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    Functions within Functions <br><br>
+    <script>
+        function youSayGoodbye() {
+            alert("Goodbye!");
+
+            function andISayHello() {
+                alert("Hello!");
+            }
+            return andISayHello;
+        }
+        var something = youSayGoodbye();
+        something();
+    </script>
+
+
+</body>
+
+</html>

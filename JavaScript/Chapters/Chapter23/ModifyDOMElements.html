@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello...</title>
+    <style>
+        .highlight {
+            font-family: "Arial";
+            padding: 30px;
+        }
+        
+        .summer {
+            font-size: 64px;
+            color: #0099FF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="theTitle" class="highlight summer">What's happening?</h1>
+    <script>
+        var title = document.querySelector("#theTitle");
+        title.textContent = "Oppa Gangnam Style!";
+
+        //getting the value of the id attribute on h1 element.
+        var title = document.querySelector("h1");
+        alert(title.getAttribute("id"));
+
+
+        //setting the value of the id attribute on h1 element.
+        document.body.setAttribute("id", "http://www.kirupa.com");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    Global Scope <br><br>
+    <script>
+        var counter = 0;
+
+        function returnCount() {
+            return counter;
+        }
+        document.write("Getting value from outside the function....:" + returnCount());
+    </script>
+    <br> <br> Local Scope <br><br>
+    <script>
+        function setState() {
+            var state = "on";
+            document.write("Getting value from inside the function....:" + state);
+        }
+        setState();
+        alert("Didnt get state here : " + state)
+    </script>
+
+    <br><br>Declarations Using var Do Not Support Block Scoping <br><br>
+    <script>
+        function checkWeight(weight) {
+            if (weight > 5000) {
+                var text = "No free shipping for you!";
+                document.writeln("inside block <br>" + text);
+            }
+            document.writeln("<br>outside block <br>" + text);
+        }
+        checkWeight(6000);
+    </script>
+</body>
+
+</html>

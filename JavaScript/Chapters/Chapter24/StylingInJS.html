@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <div id="superman">
+        Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........! <br> Inside the bar..........!
+    </div>
+
+    <script>
+        // var myElements = document.querySelectorAll(".bar");
+        // for (var i = 0; i < myElements.length; i++) {
+        //     myElements[i].style.opacity = 100;
+        // }
+
+        var myElement = document.querySelector("#superman");
+        myElement.style.backgroundColor = "#D93600";
+    </script>
+
+    <div id="myDiv">
+        Inside the mydiv..........!
+    </div>
+    <script>
+        //adding class value
+        var divElement = document.querySelector("#myDiv");
+        divElement.classList.add("baz");
+        divElement.classList.add("foo");
+        alert(divElement.classList);
+
+        //Removing Class Values
+        var divElement = document.querySelector("#myDiv");
+        divElement.classList.remove("foo");
+        alert(divElement.classList);
+
+        //Toggling Class Values
+        var divElement = document.querySelector("#myDiv");
+        divElement.classList.toggle("foo"); // add foo
+        divElement.classList.toggle("foo"); // remove foo
+        divElement.classList.toggle("foo"); // add foo
+        alert(divElement.classList);
+
+        //Checking Whether a Class Value Exists
+        if (divElement.classList.contains("baz") == true) {
+            alert("Class Value Exists");
+        }
+    </script>
+
+
+</body>
+
+</html>

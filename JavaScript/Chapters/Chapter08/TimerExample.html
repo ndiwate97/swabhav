@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function stopWatch() {
+            var startTime = Date.now();
+
+            function getDelay() {
+                var elapsedTime = Date.now() - startTime;
+                (elapsedTime);
+            }
+            return getDelay;
+        }
+        var timer = stopWatch();
+        // do something that takes some time
+        for (var i = 0; i < 1000; i++) {
+            document.writeln(i)
+        }
+        // call the returned function
+        timer();
+    </script>
+</body>
+
+</html>

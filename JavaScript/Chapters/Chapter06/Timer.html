@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    Delaying with setTimeout
+    <script>
+        function showAlert() {
+            alert("moo");
+        }
+        var timeID = setTimeout(showAlert, 5000);
+    </script>
+    <br><br>
+    <p>Looping with setInterval</p>
+    <script>
+        function drawText() {
+            document.querySelector("p").textContent += "#\n";
+        }
+        var intervalID = setInterval(drawText, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+﻿@using ContactMVCApp.ViewModels;
+@model AddViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("Add", "Contact", FormMethod.Post))
+        {
+            <p>
+                First Name : @Html.TextBoxFor(m => m.FirstName)
+            </p>
+            <p>
+                Last Name : @Html.TextBoxFor(m => m.LastName)
+            </p>
+            <p>
+                Phone No : @Html.TextBoxFor(m => m.PhoneNo)
+            </p>
+
+            <p>@AddViewModel.ErrorMsg</p>
+
+            <input type="Submit" />
+        }
+    </div>
+</body>
+</html>

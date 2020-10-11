@@ -1,0 +1,26 @@
+﻿@using StateManagementApp.ViewModels;
+@model StateViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <div>
+
+        Session Id = @Session.SessionID
+
+        <br /><br />
+
+        Old value = @Model.OldValue
+
+        <br /><br />
+
+        New Value = @Model.NewValue
+
+    </div>
+</body>
+</html>

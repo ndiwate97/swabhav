@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<style>
+			
+		</style>
+		<title>Events!</title>
+	</head>
+	<body id="theBody" class="item">
+		<div id="one_a" class="item">
+			<div id="two" class="item">
+				<div id="myParagraph" class="item">
+					<p id="paragraph">Random Text</p>
+				</div>
+			</div>
+		</div>
+		<script>
+		document.addEventListener("mousewheel", mouseWheeling, false);
+		document.addEventListener("DOMMouseScroll", mouseWheeling, false);
+		
+			function mouseWheeling(e) {
+				var scrollDirection = e.wheelDelta || -1 * e.detail;
+				if (scrollDirection > 0) {
+					console.log("Scrolling up! " + scrollDirection);
+				} else {
+					console.log("Scrolling down! " + scrollDirection);
+				}
+			}
+		</script>
+	</body>
+</html>

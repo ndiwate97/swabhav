@@ -1,0 +1,52 @@
+﻿@using EmployeeMVCAPP.ViewModel;
+@using EmployeeMVCAPP.Models;
+@model HomeViewModel
+
+<h2>Home</h2>
+<br />
+
+@if (Session["User"] != null)
+{
+    var currentUser = (LoginViewModel)Session["User"];
+    <p>You have logged in as @currentUser.UserId</p>
+    @Html.ActionLink("Logout", "Logout")
+}
+else
+{
+    <p>@Html.ActionLink("Login", "Login")</p>
+}
+
+<br />
+<br />
+Employee Count : @Model.employeeCount
+
+<br />
+
+<table>
+    <tr>
+        <th>Employee id</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+
+    @foreach (Employee e in Model.employees)
+    {
+        <tr>
+            <td>@e.Id</td>
+            <td>@e.Name</td>
+            <td>@e.Salary</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = e.Id })</td>
+            <td>@Html.ActionLink("Delete", "Delete", new { id = e.Id })</td>
+        </tr>
+    }
+
+</table>
+
+@Html.ActionLink("Add Employee", "Add")
+
+<br />
+<br />
+
+<p style="color:#FF0000" ;>
+    @EmployeeMVCAPP.ViewModel.HomeViewModel.ErrorMsg
+</p>

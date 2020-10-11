@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <u>Null Demo</u><br>
+    <script>
+        var test = null;
+        if (test === null) {
+            test = "Peter Griffin";
+        } else {
+            test = null;
+        }
+        document.writeln("<br>Test----->" + test);
+    </script>
+    <br><br>
+    <u>Undefined Demo</u><br>
+    <script>
+        var myVariable;
+        document.writeln("<br>var without initialization :" + myVariable);
+
+        function doNothing() {
+            return;
+        }
+
+        var weekendPlan = doNothing();
+        document.writeln("<br>Function without Defination :" + weekendPlan);
+
+        if (myVariable == undefined) {
+            document.writeln("<br>myVariable == undefined ------------> True");
+        }
+
+        if (typeof myVariable === "undefined") {
+            document.writeln("<br>typeof myVariable === undefined -------> True");
+        }
+    </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccountEventApp.Publisher
 {
-    public delegate void DBalanceChanged(Account acc);
+    //public delegate void DBalanceChanged(Account acc);
 
     public class Account
     {
@@ -14,7 +14,9 @@ namespace AccountEventApp.Publisher
         private string _accountName;
         private double _balance;
 
-        public event DBalanceChanged OnBalanceChanged = null;
+        //public event DBalanceChanged OnBalanceChanged = null;
+
+        public event Action<Account> OnBalanceChanged = null;
 
         public Account(String accountNo, String accountName, double balance)
         {

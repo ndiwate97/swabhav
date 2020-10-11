@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <u> Simple Function </u><br>
+    <script>
+        function areYouLucky() {
+            // Pick a random number between 0 and 100
+            var foo = Math.floor(Math.random() * 100);
+            if (foo > 50) {
+                document.writeln("<br>You are lucky!");
+            } else {
+                document.writeln("You are not lucky!");
+            }
+        }
+        // calling this function!
+        areYouLucky();
+    </script>
+
+    <br><br>
+    <u>Anonymous Function</u>
+    <br>
+    <script>
+        var isLucky = function() {
+            var foo = Math.round(Math.random() * 100);
+            if (foo > 50) {
+                return "You are lucky!";
+            } else {
+                return "You are not lucky!";
+            }
+        };
+        var me = isLucky();
+        document.writeln(me);
+        // anonymous function #2
+        window.setTimeout(function() {
+            document.writeln("Everything is awesome!!!");
+        }, 2000);
+    </script>
+
+</body>
+
+</html>

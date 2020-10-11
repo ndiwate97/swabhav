@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContactMVCApp.Models.Contact">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Contact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.DBContext.ContactDbContext">
+    <Position X="0.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBContext\ContactDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.Repository.ContactEFRepository">
+    <Position X="2.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAEAAAAAAAgAAgCAABAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\ContactEFRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ContactMVCApp.Services.ContactService">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADFAAIAAAAAAABAAAAAAAAAAQAAAAIAQBAAAA=</HashCode>
+      <FileName>Services\ContactService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.ViewModels.AddViewModel">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAEAAAAg=</HashCode>
+      <FileName>ViewModels\AddViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.ViewModels.EditViewModel">
+    <Position X="8.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\EditViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.ViewModels.HomeViewModel">
+    <Position X="5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ViewModels\HomeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactMVCApp.Controllers.ContactController">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAIAAAUAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\ContactController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ContactMVCApp.Repository.IContactRepository">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADBAAIAAAAAAABAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Repository\IContactRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

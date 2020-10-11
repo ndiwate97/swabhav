@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Demo</title>
+</head>
+
+<body>
+    <div id="texas">
+        <h1>TRAVERSING THE DOM</h1>
+
+        <p>Just a paragraph</p>
+
+        <div>An Another Div inside Div </div>
+    </div>
+
+    <script>
+        //Checking Whether a Child Exists
+        var bodyElement = document.body;
+        if (bodyElement.firstChild) {
+            document.writeln("<br>First Child Exists<br>");
+        }
+
+        //Accessing All the Child Elements
+        var bodyElement = document.body;
+        document.writeln("<br>Accessing All the Child Elements of body : ");
+        for (var i = 0; i < bodyElement.children.length; i++) {
+            var childElement = bodyElement.children[i];
+            document.writeln(childElement.tagName);
+        }
+
+        //Walking the DOM
+        function theDOMElementWalker(node) {
+            if (node.nodeType == 1) {
+                // do something with the node
+                node = node.firstChild;
+                while (node) {
+                    theDOMElementWalker(node);
+                    node = node.nextSibling;
+                }
+            }
+        }
+        var texasRanger = document.querySelector("#texas");
+        theDOMElementWalker(texasRanger);
+    </script>
+
+</body>
+
+</html>

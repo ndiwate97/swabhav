@@ -1,0 +1,54 @@
+﻿@using ContactMVCApp.ViewModels;
+@using ContactMVCApp.Models;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+
+    <h2>@HomeViewModel.Header</h2>
+    <br />
+
+    @if (Session["User"] != null)
+    {
+        var currentUser = (LoginViewModel)Session["User"];
+        <p>You have logged in as @currentUser.UserId</p>
+        @Html.ActionLink("Logout", "Logout")
+    }
+    else
+    {
+        <p>@Html.ActionLink("Login", "Login")</p>
+    }
+
+    <br />
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>PhoneNo</th>
+
+        </tr>
+
+        @foreach (Contact c in Model.contacts)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.FirstName</td>
+                <td>@c.LastName</td>
+                <td>@c.PhoneNo</td>
+                <td>@Html.ActionLink("Edit", "Edit", new { id = c.Id })</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = c.Id })</td>
+            </tr>
+        }
+
+    </table>
+    @Html.ActionLink("Add", "Add")
+
+</body>
+</html>

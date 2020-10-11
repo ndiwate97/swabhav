@@ -1,0 +1,35 @@
+﻿@using EmployeeMVCAPP.ViewModel;
+@model EditViewModel
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("Edit", "Employee", FormMethod.Post))
+        {
+            <p>
+                Employee Id : @Html.TextBoxFor(m => m.Id, new { @readonly = "readonly" } )
+            </p>
+
+            <p>
+                Name : @Html.TextBoxFor(m => m.Name, new { @Value = Model.Name})
+            </p>
+            
+            <p>
+                Salary : @Html.TextBoxFor(m => m.Salary, new { @Value = Model.Salary })
+            </p>                     
+
+            <input type="Submit" />
+        }
+    </div>
+</body>
+
+</html>

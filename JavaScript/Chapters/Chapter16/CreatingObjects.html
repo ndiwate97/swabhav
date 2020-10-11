@@ -1,0 +1,59 @@
+<html lang="en">
+
+<body>
+
+    <u>Specifying Properties</u><br>
+    <script>
+        var funnyGuy1 = {};
+        funnyGuy1.firstName = "Conan";
+        funnyGuy1.lastName = "O'Brien";
+        document.writeln("<br>Method1 : " + funnyGuy1.firstName + " " + funnyGuy1.lastName);
+
+        var funnyGuy2 = {};
+        funnyGuy2["firstName"] = "Conan";
+        funnyGuy2["lastName"] = "O'Brien";
+        document.writeln("<br>Method2 : " + funnyGuy2.firstName + " " + funnyGuy2.lastName);
+
+        var funnyGuy3 = {
+            firstName: "Conan",
+            lastName: "O'Brien"
+        };
+        document.writeln("<br>Method2 : " + funnyGuy2.firstName + " " + funnyGuy2.lastName);
+
+        var funnyGuy = {
+            firstName: "Namrata",
+            lastName: "Diwate",
+            getName: function() {
+                return "Name is: " + this.firstName + " " + this.lastName;
+            }
+        };
+        document.writeln("<br><br>Getting Full name using getter :<br> " + funnyGuy.getName());
+    </script>
+
+    <br><br><u>Creating Custom Object</u><br>
+    <script>
+        var person = {
+            getName: function() {
+                return "Name is " + this.firstName + " " + this.lastName;
+            }
+        };
+        var funnyGuy = Object.create(person);
+        funnyGuy.firstName = "Conan";
+        funnyGuy.lastName = "O'Brien";
+
+        var theDude = Object.create(person);
+        theDude.firstName = "Jeffrey";
+        theDude.lastName = "Lebowski";
+
+        var detective = Object.create(person);
+        detective.firstName = "Adrian";
+        detective.lastName = "Monk";
+
+        document.writeln("<br>funnyGuy : " + funnyGuy.getName());
+        document.writeln("<br>theDude : " + theDude.getName());
+        document.writeln("<br>detective : " + detective.getName());
+    </script>
+
+</body>
+
+</html>

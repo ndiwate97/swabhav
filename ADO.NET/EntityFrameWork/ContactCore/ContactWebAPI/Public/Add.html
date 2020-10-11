@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+
+                console.log("button clicked");
+                var fname = $("#FirstName").val();
+                var lname = $("#LastName").val();
+                var number = $("#PhoneNo").val();
+                var contact = {
+                    FirstName: fname,
+                    LastName: lname,
+                    PhoneNo: number
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/v1/Contact/AddContact',
+                    dataType: 'json',
+                    data: contact,
+                    success: function (data) {
+                        alert("Contact Added Successfully....!");
+                        console.log(data);
+                    },
+                    failure: function (data) {
+                        alert(data.responsetext);
+                    },
+                    error: function (data) {
+                        alert(data.responsetext);
+                    }
+                                        
+                });
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Add Contact</h1>
+    <br />
+    <a href="Index.html">Home</a>
+    <br />
+    <form>
+        <label for="FirstName">First name : </label>
+        <input type="text" id="FirstName">
+        <br />
+        <br />
+        <label for="LastName">Last name : </label>
+        <input type="text" id="LastName">
+        <br />
+        <br />
+        <label for="PhoneNo">Phone No : </label>
+        <input type="text" id="PhoneNo">
+        <br />
+        <br />
+        <button value="Add Contact" id="submit">Add Contact</button>
+        <br />
+        <br />
+        <!--<div id="SuccessMsg" style="color : green;"></div>-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCKTYPE html>
+<html>
+<body>
+    <div id="outerContainer">
+		<div>
+			<h1>This one thing will change your life!!!</h1>
+		</div>
+    </div>
+    <div id="footer">
+		<div class="share">
+			<p>Something</p>
+			
+		</div>
+    </div>
+    <script>
+		var share = document.querySelector(".share");
+		var shareClone = share.cloneNode(true);
+		document.querySelector("#footer").appendChild(shareClone);
+    </script>
+</body>
+</html>

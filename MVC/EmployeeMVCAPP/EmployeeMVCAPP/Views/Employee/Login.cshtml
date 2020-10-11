@@ -1,0 +1,28 @@
+﻿@using EmployeeMVCAPP.ViewModel
+@model LoginViewModel
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("Login", "Employee", FormMethod.Post))
+        {
+            <p>
+                User Id : @Html.TextBoxFor(m => m.UserId)
+            </p>
+
+            <p>
+                Password : @Html.TextBoxFor(m => m.Password, new { type = "password" })
+            </p>
+
+            <p style="color:#FF0000" ;>@LoginViewModel.ErrorMsg</p>
+
+            <input type="Submit" />
+        }
+    </div>
+
+</body>
+</html>

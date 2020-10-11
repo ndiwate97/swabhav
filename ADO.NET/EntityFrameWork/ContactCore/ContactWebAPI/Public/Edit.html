@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var url = new URL(window.location.href);
+            var id = url.searchParams.get("id");
+            console.log(id);
+
+            $.ajax({
+                type: "GET",
+                url: "/api/v1/Contact/" + id,
+                dataType: "json",
+                success: function (data) {
+                    console.log("Response----->" + JSON.stringify(data));                    
+                    $("#Id").val(data.Id);
+                    $("#FirstName").val(data.FirstName);
+                    $("#LastName").val(data.LastName);
+                    $("#PhoneNo").val(data.PhoneNo);                         
+                },
+            });
+
+            $("#submit").click(function () {
+
+                console.log("button clicked");
+                var id = $("#Id").val();
+                var fname = $("#FirstName").val();
+                var lname = $("#LastName").val();
+                var number = $("#PhoneNo").val();
+                var contact = {
+                    Id : id,
+                    FirstName: fname,
+                    LastName: lname,
+                    PhoneNo: number
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/v1/Contact/EditContact',
+                    dataType: 'json',
+                    data: contact,
+                    success: function (data) {
+                        console.log(data);
+                        window.location.href = "Index.html";
+                    },
+                    failure: function (data) {
+                        alert(data.responsetext);
+                    },
+                    error: function (data) {
+                        alert(data.responsetext);
+                    }
+
+                });
+                return false;
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Edit Contact</h1>
+
+    <form action="Index.html">
+
+        <label for="Id">Id : </label>
+        <input type="text" id="Id" readonly>
+        <br />
+        <br />
+        <label for="FirstName">First name : </label>
+        <input type="text" id="FirstName">
+        <br />
+        <br />
+        <label for="LastName">Last name : </label>
+        <input type="text" id="LastName">
+        <br />
+        <br />
+        <label for="PhoneNo">Phone No : </label>
+        <input type="text" id="PhoneNo">
+        <br />
+        <br />
+        <button value="Save Changes" id="submit">Save Changes</button>
+        <br />
+        <br />
+    </form>
+</body>
+</html>

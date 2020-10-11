@@ -1,0 +1,38 @@
+<html lang="en">
+
+<body>
+    <u>Boolean</u>
+</body>
+<script>
+    document.writeln("<br>Boolean(false) = " + Boolean(false));
+    document.writeln("<br>Boolean(true) = " + Boolean(true));
+    document.writeln("<br>Boolean(null) = " + Boolean(null));
+    document.writeln("<br>Boolean(undefined) = " + Boolean(undefined));
+    document.writeln("<br>Boolean() = " + Boolean());
+    document.writeln("<br>Boolean(0) = " + Boolean(0));
+    document.writeln("<br>Boolean(\"\") = " + Boolean(""));
+    document.writeln("<br>Boolean(NaN) = " + Boolean(NaN));
+    document.writeln("<br>Boolean(\"hello\") = " + Boolean("hello"));
+    document.writeln("<br>Boolean(\"Liam Neesons" + "Bruce Willie\") = " + Boolean("Liam Neesons" + "Bruce Willie"));
+    document.writeln("<br>Boolean(new Boolean()) = " + Boolean(new Boolean()));
+
+    function solution(answer) {
+        if (answer == 42) {
+            alert("42 == \"42\" ");
+        }
+    }
+    solution("42");
+
+    function theSolution(answer) {
+        if (answer === 42) {
+            alert("42 === \"42\" ");
+        } else {
+            alert("42 === \"42\"  failed");
+        }
+    }
+    theSolution("42");
+</script>
+
+
+
+</html>

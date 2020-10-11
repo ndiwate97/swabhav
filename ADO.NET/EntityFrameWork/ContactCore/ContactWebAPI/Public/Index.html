@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+         $(document).ready(function () {
+             $.ajax({
+                 type: "GET",
+                 url: "/api/v1/Contact",
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (data) {
+                     console.log("Response----->" + JSON.stringify(data));
+                     $("#DIV").html('');
+                     var DIV = '';
+                     $.each(data, function (i, item) {
+                         var rows = "<tr>" +
+                             "<td id='Id'>" + item.Id + "</td>" +
+                             "<td id='FirstName'>" + item.FirstName + "</td>" +
+                             "<td id='LastName'>" + item.LastName + "</td>" +
+                             "<td id='PhoneNo'>" + item.PhoneNo + "</td>" +
+                             "<td ><a id='Edit' href=\"Edit.html?id=" + item.Id + "\">Edit</a> </td> " +
+                             "<td><button id='Delete'>Delete</button></td>" +
+                             "</tr>";
+                         console.log(rows);
+                         $('#Table').append(rows);
+                     });
+                 },
+                 failure: function (data) {
+                     alert(data.responseText);
+                 },
+                 error: function (data) {
+                     alert(data.responseText);
+                 }
+             });
+
+             $("#Delete").click(function () {
+
+                 console.log("Delete clicked");
+
+                 $.ajax({
+                     url: 'api/v1/Contact/Delete?id=' + $("#Id").val(),
+                     type: 'DELETE',
+                     dataType: 'json',
+                     data: contactId,
+                     success: function (data) {
+                         console.log(data);
+                     },
+                     failure: function (data) {
+                         alert(data.responseText);
+                     },
+                     error: function (data) {
+                         alert(data.responseText);
+                     }
+                 });
+             });
+
+             return false;
+         });
+     </script>
+</head>
+
+<body>
+    <h1>Contact Manager</h1>
+    <form>
+        <table border="1" id="Table">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone No</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <a href="Add.html">Add Contact</a>
+    </form>
+</body>
+</html>
+
+

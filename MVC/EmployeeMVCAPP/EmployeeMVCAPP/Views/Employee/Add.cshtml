@@ -1,0 +1,27 @@
+﻿@using EmployeeMVCAPP.ViewModel;
+@model AddViewModel
+
+
+<body>
+    <h2>@Model.Title</h2>
+
+    <div>
+        @using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post))
+        {
+            <p>
+                Employee Id : @Html.TextBoxFor(m => m.Id)
+            </p>
+            <p>
+                Name : @Html.TextBoxFor(m => m.Name)
+            </p>
+            <p>
+                Salary : @Html.TextBoxFor(m => m.Salary)
+            </p>
+            
+                <p>@AddViewModel.ErrorMsg</p>
+           
+            <input type="Submit" />
+        }
+    </div>
+</body>
+

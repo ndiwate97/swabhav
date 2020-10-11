@@ -1,0 +1,27 @@
+﻿@using StateManagementApp.ViewModels
+@model CookieViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body style="background-color : @Model.CookieValue">
+    <div>
+
+        <h1 style="color:#FF0000";>@Model.ErrorMessage</h1>
+
+        Cookie Name   : @Model.CookieName
+        <br />
+        Cookie Value  : @Model.CookieValue
+        <br />
+        CookieExpires : @Model.CookieExpires
+
+        @*<br />
+        @DateTime.Now.AddDays(7)*@
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <u>Using a Number</u><br>
+    <script>
+        var stooges = 3;
+        document.writeln("Integer value : " + stooges);
+        var pi = 3.14159;
+        document.writeln("<br>Float Value : " + pi);
+        var color = 0xFF;
+        document.writeln("<br>Complex No : " + color);
+        var massOfEarth = 5.9742e+24;
+        document.writeln("<br>Complex No : " + massOfEarth);
+        var temperature = -42;
+        document.writeln("<br>Negative No : " + temperature);
+    </script>
+    <br><br><u>Using Operators</u><br>
+    <script>
+        var total = 4 + 26;
+        document.writeln("<br>4 + 26 = " + total);
+        var average = total / 2;
+        document.writeln("<br>total / 2 = " + average);
+        var doublePi = 2 * 3.14159;
+        document.writeln("<br>doublePi = " + doublePi);
+        var removeItem = 50 - 25;
+        document.writeln("<br>50 - 25 = " + removeItem);
+        var remainder = total % 7;
+        document.writeln("<br>total % 7 = " + remainder);
+        var more = (1 + average * 10) / 5;
+        document.writeln("<br>(1 + average * 10) / 5 = " + more);
+    </script>
+
+    <br><br><u>Incrementing and Decrementing</u><br>
+    <script>
+        var i = 4;
+        document.writeln("<br>i = " + i);
+        i++;
+        document.writeln("<br>i++ = " + i);
+        document.writeln("<br>i+1 = " + (i + 1));
+        i += 2;
+        document.writeln("<br>i += 2 = " + i);
+        i--;
+        document.writeln("<br>i-- = " + i);
+        document.writeln("<br>i-1 = " + (i - 1));
+        i -= 2;
+        document.writeln("<br>i -= 2 = " + i);
+    </script>
+
+    <br><br><u>Special Values—Infinity and NaN</u><br>
+    <script>
+        var reallyBigNumber = Infinity;
+        var reallySmallNumber = -Infinity;
+        document.writeln("<br>Infinity = " + reallyBigNumber);
+        document.writeln("<br>-Infinity = " + reallySmallNumber);
+        var oops = Math.sqrt(-1);
+        document.writeln("<br>NaN = " + oops);
+    </script>
+</body>
+
+</html>

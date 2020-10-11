@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Events!</title>
+	</head>
+	<body id="theBody" class="item">
+		<div id="one_a" class="item">
+			<div id="two" class="item">
+				<div id="myButton" class="item">
+					<button id="buttonOne" class="item">Button</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			var button = document.querySelector("#myButton");
+			button.addEventListener("mousemove", mouseIsMoving, false);
+			function mouseIsMoving(e) {
+				console.log("Mouse is on the run!");
+			}
+		</script>
+	</body>
+</html>
