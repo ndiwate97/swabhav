@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head><title>ASYNC 1</title>>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        function doSomeIoOperation(input,callback){
+            var data = Math.random()*input;
+            callback(data);
+        }
+        doSomeIoOperation(10,function(r){
+            console.log("data is "+r);
+        })
+        console.log("End program");
+    </script>
+</html>

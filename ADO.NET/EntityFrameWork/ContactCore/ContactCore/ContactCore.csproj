@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBContext\ContactDbContext.cs" />
-    <Compile Include="Migrations\202010060716066_v1_AddingContactTable.cs" />
-    <Compile Include="Migrations\202010060716066_v1_AddingContactTable.Designer.cs">
-      <DependentUpon>202010060716066_v1_AddingContactTable.cs</DependentUpon>
+    <Compile Include="Migrations\202010121244033_v1_addingCustOrderTables.cs" />
+    <Compile Include="Migrations\202010121244033_v1_addingCustOrderTables.Designer.cs">
+      <DependentUpon>202010121244033_v1_addingCustOrderTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
@@ -64,8 +64,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202010060716066_v1_AddingContactTable.resx">
-      <DependentUpon>202010060716066_v1_AddingContactTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010121244033_v1_addingCustOrderTables.resx">
+      <DependentUpon>202010121244033_v1_addingCustOrderTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

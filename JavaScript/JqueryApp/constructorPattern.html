@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSTRUCTOR SOLUTION</title>
+</head>
+
+<body>
+    <script>
+        function Customer(name, location) {
+            this.name = name;
+            this.location = location;
+            this.show = function() {
+                setTimeout(() => {
+                    console.log(this);
+                    console.log(
+                        "NAME : " + this.name + ", LOCATION:  " + this.location
+                    );
+                }, 3000);
+            };
+        }
+
+        var customer = new Customer("Namrata", "Diwate");
+        customer.show();
+    </script>
+</body>
+
+</html>

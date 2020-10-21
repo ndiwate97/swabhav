@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function square(no, callback){
+            console.log("Squaring value");
+            callback(no*no);
+        }
+        square(2,display1);
+        square(3,display2);
+
+        function display1(r){
+            console.log("Inside display 1",r);
+        }
+
+        function display2(r){
+            console.log("Inside display 2",r);
+        }
+    </script>
+</body>
+</html>

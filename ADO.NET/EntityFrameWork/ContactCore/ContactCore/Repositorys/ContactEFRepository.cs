@@ -18,6 +18,7 @@ namespace ContactCore.Repositorys
                
         public List<Contact> GetContacts()
         {
+
             return contactDB.Contacts.ToList();
         }
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            squareEvenNo(10,displayOnConsole);
+        },3000);
+        function squareEvenNo(no,display){
+            if(no%2==0){
+                display(no*no);
+            }
+            else{
+                display("Error "+no+" is not even");
+            }
+        }
+        function displayOnConsole(result){
+            console.log(result);
+        }
+    </script>
+</body>
+</html>

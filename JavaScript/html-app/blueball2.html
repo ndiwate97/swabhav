@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blue Ball Game</title>
+    <style>
+        .button {
+            background-color: #99a09a;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 50%;
+        }
+        .setButtonBlue{
+            background-color: blue
+        }   
+        .setButtonRed{
+            background-color: red
+        }
+        .setButtonGreen{
+            background-color: green
+        }
+    </style>
+</head>
+<body>
+    <div id="rules">
+        <h1><b><font color="Blue">Blue Ball Game</font> </b></h1>
+        <h3><u><b>Rules</b></u></h3>
+        <ol style="text-align: left">
+            <li><b>Please read the rules of game carefully...</b></li>                        
+            <li><b>Press 'START' to start the Game</b></li>
+            </ol>
+        <ul style="text-align: left">
+            <li>If you guessed ball and the location is frontside of blueball then that ball will become<font color="Green"> Green </font>color ball</li>
+            <li>If you guessed ball and the location is backside of blueball then  that ball will become<font color="Red"> Red</font> color ball</li>
+            <li>If you guessed the right ball then you'll win the game</li>
+        </ul>
+    </div>
+    <button id="startBtn">Start</button>
+
+    <script>
+        
+        var game = (function(){
+            var attempts = 5;
+            var gameObj = {}
+            gameObj.startGame = function(){
+                this.remove();
+                document.querySelector("#rules").remove();
+                var blueButton=Math.floor((Math.random()*50)+1);
+                console.log(blueButton);
+                var attemptMade = document.createElement("div");
+                attemptMade.textContent = "Attempts Left : "+attempts;
+                document.body.appendChild(attemptMade);
+
+                for(var i=1 ; i<=50 ;i++){
+                    var button = document.createElement("button");
+                    button.className = "button";
+                    button.innerText = i;
+                    document.body.appendChild(button);
+                    
+                    button.addEventListener("click",function(){
+                        
+                        if(this.style.backgroundColor != blueButton && attempts>0){
+                            if(this.innerText == blueButton){
+                                game.checkAttemptsMade(attemptMade);
+                                this.setAttribute("class","setButtonBlue button");
+                                alert("You have won");
+                                attempts = 0;
+                                
+                            }
+                            if(this.innerText>blueButton){
+                                game.checkAttemptsMade(attemptMade);
+                                this.setAttribute("class","setButtonGreen button");
+                            }
+                            if(this.innerText<blueButton){
+                                game.checkAttemptsMade(attemptMade);
+                                this.setAttribute("class","setButtonRed button");
+                            }
+                        }
+                        else{
+                            alert("Game Over");
+                        }
+                    },false);
+                }
+            }
+
+            gameObj.checkAttemptsMade = function(attemptMade){
+                attempts--;
+                attemptMade.innerHTML = "Attempts Left : "+attempts;
+            }
+            return gameObj;
+        })();
+        document.querySelector("#startBtn").addEventListener("click",game.startGame,false);
+        
+    </script>
+    
+</body>
+</html>

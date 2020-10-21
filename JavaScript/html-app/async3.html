@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head><title>ASYNC 3</title>>
+    </head>
+    <body>
+    <script>
+        function doSomeIoOperation(input){
+            return new Promise(function(resolve,reject){
+                var data = Math.random()*input;
+                if(data>1){
+                    resolve(data);
+                }
+                else{
+                    reject("Some error");
+                }
+            });
+        }
+        doSomeIoOperation(10).then(function(r){
+            console.log("value :" + r);
+        }).catch(function(r){
+            console.log(r);
+        })
+        console.log("End program");
+    </script>
+    </body>
+</html>

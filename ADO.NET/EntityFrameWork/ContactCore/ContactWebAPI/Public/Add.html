@@ -23,6 +23,10 @@
                     success: function (data) {
                         alert("Contact Added Successfully....!");
                         console.log(data);
+
+                        $("#FirstName").val("");
+                        $("#LastName").val("");
+                        $("#PhoneNo").val(""); 
                     },
                     failure: function (data) {
                         alert(data.responsetext);

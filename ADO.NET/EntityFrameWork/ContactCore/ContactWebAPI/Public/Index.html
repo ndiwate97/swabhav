@@ -1,65 +1,90 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        
-         $(document).ready(function () {
-             $.ajax({
-                 type: "GET",
-                 url: "/api/v1/Contact",
-                 contentType: "application/json; charset=utf-8",
-                 dataType: "json",
-                 success: function (data) {
-                     console.log("Response----->" + JSON.stringify(data));
-                     $("#DIV").html('');
-                     var DIV = '';
-                     $.each(data, function (i, item) {
-                         var rows = "<tr>" +
-                             "<td id='Id'>" + item.Id + "</td>" +
-                             "<td id='FirstName'>" + item.FirstName + "</td>" +
-                             "<td id='LastName'>" + item.LastName + "</td>" +
-                             "<td id='PhoneNo'>" + item.PhoneNo + "</td>" +
-                             "<td ><a id='Edit' href=\"Edit.html?id=" + item.Id + "\">Edit</a> </td> " +
-                             "<td><button id='Delete'>Delete</button></td>" +
-                             "</tr>";
-                         console.log(rows);
-                         $('#Table').append(rows);
-                     });
-                 },
-                 failure: function (data) {
-                     alert(data.responseText);
-                 },
-                 error: function (data) {
-                     alert(data.responseText);
-                 }
-             });
 
-             $("#Delete").click(function () {
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "/api/v1/Contact",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    console.log("Response----->" + JSON.stringify(data));
+                    $("#DIV").html('');
+                    var DIV = '';
+                    $.each(data, function (i, item) {
+                        var rows = "<tr>" +
+                            "<td id='Id'>" + item.Id + "</td>" +
+                            "<td id='FirstName'>" + item.FirstName + "</td>" +
+                            "<td id='LastName'>" + item.LastName + "</td>" +
+                            "<td id='PhoneNo'>" + item.PhoneNo + "</td>" +
+                            "<td ><a id='Edit' href=\"Edit.html?id=" + item.Id + "\">Edit</a> </td> " +
+                            "<td><button onclick=\"DeleteCall(" + item.Id + ")\" id='Delete'>Delete</button></td>" +
+                            "</tr>";
+                        console.log(rows);
+                        $('#Table').append(rows);
+                    });
+                },
+                failure: function (data) {
+                    alert(data.responseText);
+                },
+                error: function (data) {
+                    alert(data.responseText);
+                }
+            });
 
-                 console.log("Delete clicked");
+            //$("#Delete").click(function () {
+            //    debugger
+            //    console.log("Delete clicked");
 
-                 $.ajax({
-                     url: 'api/v1/Contact/Delete?id=' + $("#Id").val(),
-                     type: 'DELETE',
-                     dataType: 'json',
-                     data: contactId,
-                     success: function (data) {
-                         console.log(data);
-                     },
-                     failure: function (data) {
-                         alert(data.responseText);
-                     },
-                     error: function (data) {
-                         alert(data.responseText);
-                     }
-                 });
-             });
+            //    $.ajax({
+            //        url: 'api/v1/Contact/Delete?id=' + $("#Id").val(),
+            //        type: 'DELETE',
+            //        dataType: 'json',
+            //        data: contactId,
+            //        success: function (data) {
+            //            console.log(data);
+            //        },
+            //        failure: function (data) {
+            //            alert(data.responseText);
+            //        },
+            //        error: function (data) {
+            //            alert(data.responseText);
+            //        }
+            //    });
+            //    return false;
+            //});
+        });
 
-             return false;
-         });
-     </script>
+        function DeleteCall(id) {
+            //alert("Delete called with id : " + id);
+            console.log("Delete clicked");
+
+            $.ajax({
+                url: 'https://localhost:44300/api/v1/Contact/Delete?id=' + id,
+                type: 'DELETE',
+                dataType: 'json',
+                // data: id,
+                //success: function (data) {
+                success: function () {
+                    alert("Delete done....!");
+                    //console.log("data->" + data);
+                },
+                failure: function (data) {
+                    alert(data.responseText);
+                },
+                error: function (data) {
+                    alert(data.responseText);
+                }
+            });
+            //return false;
+        }
+
+    </script>
 </head>
 
 <body>

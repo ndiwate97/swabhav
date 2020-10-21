@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            console.log("After 2 sec, in console");
+        },2000);
+        setTimeout(displayAlert,4000);
+        setTimeout(displayInHtml,4000);
+        
+        function displayAlert(){
+            alert("After 4 sec, in alert box");
+        }
+
+        function displayInHtml(){
+            document.write("<h1>After 8 sec, in Html Page</h1>");
+        }
+    </script>
+</body>
+</html>

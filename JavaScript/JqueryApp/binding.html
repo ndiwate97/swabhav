@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BINDING</title>
+</head>
+
+<body>
+    <p>FOREGROUND COLOR</p>
+    <select name="colours" id="foreground-colour">
+            <option value="">--Select--</option>
+        </select>
+
+    <p>BACKGROUND COLOR</p>
+    <select name="colours" id="background-colour">
+            <option value="">--Select--</option>
+        </select>
+
+    <p>Text</p>
+    <textarea id="text" rows="4" cols="50"></textarea>
+
+    <p>Font Size</p>
+    <input type="number" id="font-size">
+    <div id="banner">
+        <p>Write something here....!</p>
+    </div>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script>
+        var colours = [{
+                "name": "Red",
+                "value": "#ff1414",
+            }, {
+                "name": "Blue",
+                "value": "#142cff",
+            }, {
+                "name": "Green",
+                "value": "#35ff12",
+            }
+
+        ]
+        $(document).ready(function() {
+            for (var index = 0; index < colours.length; index++) {
+                $("#foreground-colour").append("<option value='" + colours[index].value + "'>" + colours[index].name + "</option>").css({
+                    "border-style": "solid"
+                });
+                $("#background-colour").append("<option value='" + colours[index].value + "'>" + colours[index].name + "</option>").css({
+                    "border-style": "solid"
+                });
+            }
+            $("#background-colour").change(function() {
+                var selectedValue = $(this).children("option:selected").val();
+                console.log(selectedValue);
+                $("#banner").css({
+                    "background-color": selectedValue
+                });
+            });
+            $("#foreground-colour").change(function() {
+                var selectedValue = $(this).children("option:selected").val();
+                $("#banner").css({
+                    "color": selectedValue
+                });
+            });
+            $("#text").change(function() {
+
+                $("#banner").text($("#text").val());
+            });
+            $("#font-size").change(function() {
+                $("#banner").css({
+                    "font-size": $("#font-size").val() + "px"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
